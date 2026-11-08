@@ -74,7 +74,8 @@ logger = logging.getLogger(__name__)
 # exports use the typographic apostrophe as thousands separator, e.g.:
 #   FUSION: Verkauf 1’105 zu je 14.2055 EUR (LU1781541179)
 _TRADE_RE = re.compile(
-    r"^(?:FUSION:\s+)?(Buy|Sell|Acquisto|Vendita|Achat|Vente|Kauf|Verkauf)"
+    r"^(?:FUSION:\s+|Modification instrument:\s+)?"
+    r"(Buy|Sell|Acquisto|Vendita|Achat|Vente|Kauf|Verkauf)"
     r"\s+(\d[\d'’.]*(?:[.,]\d+)?)"
     r"(?:\s+(.+?)@|\s+zu je)"
     r"\s*([\d.,'’]+)\s+([A-Z]{3})"

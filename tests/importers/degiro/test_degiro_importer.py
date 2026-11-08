@@ -198,6 +198,13 @@ def test_cash_balances_are_aggregated_into_one_account_per_currency(
     ("Kauf 1’105 zu je 14.2055 EUR (LU1781541179)", "Kauf", "1’105", "14.2055", "EUR"),
     ("FUSION: Verkauf 1’105 zu je 14.2055 EUR (LU1781541179)", "Verkauf", "1’105", "14.2055", "EUR"),
     ("FUSION: Kauf 160 zu je 98.1 EUR (IE000BI8OT95)", "Kauf", "160", "98.1", "EUR"),
+    (
+        "Modification instrument: Vente 35 iShares Asia Pacific Dividend UCITS ETF USD (Dist)@23,94 EUR (IE00B14X4T88)",
+        "Vente",
+        "35",
+        "23,94",
+        "EUR",
+    ),
 ])
 # fmt: on
 def test_trade_re_matches(desc, action, qty, price, currency):

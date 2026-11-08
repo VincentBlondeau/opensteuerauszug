@@ -82,6 +82,10 @@ def _make_row(**kwargs) -> DegiroRow:
         # French descriptions
         ("Achat 60 iShares@20.08 EUR (IE00B3WJKG14)", DegiroRowKind.BUY_SELL),
         ("Vente 10 Activision@0 USD (US00507V1098)", DegiroRowKind.BUY_SELL),
+        (
+            "Modification instrument: Vente 35 iShares@23,94 EUR (IE00B14X4T88)",
+            DegiroRowKind.BUY_SELL,
+        ),
         ("Dividende", DegiroRowKind.DIVIDEND),
         ("Impôt sur les dividendes", DegiroRowKind.DIVIDEND_TAX),
         ("Impôts sur dividende", DegiroRowKind.DIVIDEND_TAX),

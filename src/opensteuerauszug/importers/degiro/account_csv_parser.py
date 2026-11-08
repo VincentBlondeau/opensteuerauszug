@@ -122,6 +122,7 @@ _PREFIX_MATCH: list[tuple[str, DegiroRowKind]] = [
     # Fund merger legs, e.g. "FUSION: Verkauf 1’105 zu je 14.2055 EUR (LU1781541179)"
     ("FUSION: Kauf ", DegiroRowKind.BUY_SELL),
     ("FUSION: Verkauf ", DegiroRowKind.BUY_SELL),
+    ("Modification instrument: ", DegiroRowKind.BUY_SELL),
     # CORPORATE_CASH
     ("Corporate Action Cash Settlement", DegiroRowKind.CORPORATE_CASH),
     # DELISTING
